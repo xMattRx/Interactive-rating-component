@@ -1,26 +1,17 @@
-import './App.modules.css'
-import star from './assets/icon-star.svg'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Evaluation } from './pages/Evaluation/Evaluation'
+import { Thank } from './pages/Thank/Thank'
+
 
 function App() {
 
   return (
-    <div className="App">
-      <div className='container-rating'>
-        <form action="">
-          <img src={star} className="star-image" alt="" />
-          <h1 className="title">How did we do?</h1>
-          <p className='paragraph'>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-          <div className='container-number'>
-            <p className='number'>1</p>
-            <p className='number'>2</p>
-            <p className='number'>3</p>
-            <p className='number'>4</p>
-            <p className='number'>5</p>
-          </div>
-          <button className="submit">SUBMIT</button>
-        </form>
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Evaluation />} />
+        <Route path="/thank/:id" element={<Thank />} />
+      </Routes>
+    </Router>
   )
 }
 

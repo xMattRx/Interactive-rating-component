@@ -1,4 +1,8 @@
-:root, .App {
+*{
+  margin: 0px;
+  padding: 0px;
+}
+#root, .App {
   align-items: center;
   background-color: #141519;
   color: #fff;

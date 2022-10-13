@@ -1,0 +1,27 @@
+.number {
+    background-color: #20242e;
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+    cursor: pointer;
+    font-family: 'Overpass', sans-serif;
+    padding: 18px 25px;
+    transition: ease 0.5s;
+
+    @media screen and (max-width:441px) {
+        padding: 9px 16px;
+    }
+
+    &:hover {
+        background: hsl(25, 97%, 53%);
+        color: #fff;
+    }
+}
+
+.selected {
+    background-color: hsl(217, 12%, 63%);
+    color: #fff;
+
+    &:hover {
+        background-color: hsl(217, 12%, 63%);
+    }
+}

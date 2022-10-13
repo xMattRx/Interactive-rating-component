@@ -1,0 +1,36 @@
+.container-thank {
+    border-radius: 10%;
+    background: linear-gradient(0deg, #171b23 0%, #161e29 100%);
+    margin: 10px;
+    padding: 65px 40px;
+
+    form {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            margin-bottom: 30px;
+        }
+
+        .selected {
+            background-color: #20242e;
+            border-radius: 30px;
+            color: hsl(25, 97%, 53%);
+            margin-bottom: 30px;
+            padding: 7px 20px;
+            text-align: center;
+        }
+
+        .paragraph {
+            color: hsl(217, 12%, 63%);
+            line-height: 26px;
+            margin-top: 15px;
+            max-width: 365px;
+            text-align: center;
+        }
+    }
+
+
+}
